@@ -2,6 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+function AddAutorizationData(params) {
+  let x = params;
+  x.user = process.env.REACT_APP_API_USERNAME;
+  x.password = process.env.REACT_APP_API_PASSWORD;
+  return x;
+}
 function App() {
   return (
     <div className="App">
